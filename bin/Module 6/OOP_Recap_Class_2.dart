@@ -1,5 +1,6 @@
 import 'mobile.dart';
 import 'shop.dart';
+import 'tablet.dart';
 void main(){
 
   Shop gadgetShop = Shop('GnG', 'Mirpur, Dhaka');
@@ -12,7 +13,15 @@ void main(){
       price: 120000.0
   );
 
+  Tablet iPad11Gen = Tablet(
+      m: 'iPad 11 Gen',
+      year: '2025',
+      price: 51000,
+      screenSize: 11,
+  );
+
   gadgetShop.addNewMobile(iPhone13);
+  gadgetShop.addNewMobile(iPad11Gen);
 
   //Interface of sell a mobile:
   gadgetShop.sellAMobile('iPhone 13 Pro Max');
